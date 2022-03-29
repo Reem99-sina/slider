@@ -1,0 +1,43 @@
+.layer {
+    background-color: white;
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: -50px;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.item:hover .layer {
+    bottom: 15px;
+    opacity: 1;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#textOverlay {
+    background-image: url(../img/portfolio-1.jpg);
+    width: 50%;
+    height: 500px;
+    background-size: cover;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
